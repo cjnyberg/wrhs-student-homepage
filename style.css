@@ -119,7 +119,7 @@ h1 {
 }
 .honeybutton:after {
   position: absolute;
-  top: 32px;
+  top: 29px;
   content: '';
   border-top: none;
   -webkit-transform: perspective(15px) rotateX(-5deg);
