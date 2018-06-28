@@ -1,0 +1,188 @@
+body {
+    background: url('Images/hc.jpg');
+    background-repeat: repeat;
+}
+/*000000 (black) #ECE4B7 (off white) 570000 (maroon) D4AF37 (gold) 3B3B3B (grey)*/
+.brand-logo {
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline;
+    font-size: 50px !important;
+    vertical-align: sub;
+}
+nav ul a {
+    /*-webkit-transition: background-color .3s;*/
+    /*transition: background-color .3s;*/
+    font-size: 1vw;
+    color: #fff;
+    display: block;
+    letter-spacing: 1px;
+    /*padding: 0 15px;*/
+    /*cursor: pointer;*/
+}
+.nav-extended {
+    background-color: #570000 !important;
+}
+.btn-floating {
+    background-color: #D4AF37;
+}
+#right-links {
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+    font-size: 50px !important;
+}
+.sidebar {
+    padding: 0px;
+    display: table-row;
+    grid-row: span 4;
+    height: 100%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    /*grid-template-columns: 1fr repeat(auto-fit,minmax(500px,1fr));*/
+    grid-gap: 10px;
+    padding: 0%;
+}
+.hornet-time {
+    background-color: green;
+}
+.social-media {
+    background-color: aquamarine;
+}
+.container {
+    width: 100%;
+}
+.container-pictures {
+    /*border: 2px solid black;*/
+    /*padding: 0px;*/
+}
+.item {
+    margin-left: auto;
+    margin-right: auto;
+}
+#Image1 {
+    height: 300px;
+    width: 100%;
+}
+#Image2 {
+    height: 300px;
+    width: 100%;
+}
+#Image3 {
+    height: 300px;
+    width: 100%;
+}
+#Image4 {
+    height: 300px;
+    width: 100%;
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+    padding: 5px;
+}
+.progress {
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    z-index: 100;
+}
+h1 {
+    font-size: 12.5px
+}
+/*HoneyComb Buttons*/
+/*line*/
+.vl {
+  margin-left: 80px;
+  margin-top: 0px;
+  border-left: 6px solid black;
+  height: 100%;
+  z-index: -10;
+  position: absolute;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+/* Button Border Style */
+.maroon:before,
+.maroon:after {
+  border: 3px solid #570000;
+  background-color: #D4AF37;
+}
+.honeybutton:before {
+  position: absolute;
+  content: '';
+  border-bottom: none;
+  -webkit-transform: perspective(15px) rotateX(5deg);
+  -moz-transform: perspective(15px) rotateX(5deg);
+  transform: perspective(9px) rotateX(4deg);
+}
+.honeybutton:after {
+  position: absolute;
+  top: 32px;
+  content: '';
+  border-top: none;
+  -webkit-transform: perspective(15px) rotateX(-5deg);
+  -moz-transform: perspective(15px) rotateX(-5deg);
+  transform: perspective(9px) rotateX(-4deg);
+}
+.maroon,
+.honeybutton{
+  position: absolute;
+}
+.honeybutton {
+  transition: all 0.5s;
+  position: relative;
+  display: block;
+  background: transparent;
+  width: 100px;
+  height: 45px;
+  line-height: 60px;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 40px;
+  margin-top: 10px;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+.honeybutton:before,
+.honeybutton:after {
+  position: absolute;
+  z-index: -1;
+  width: 100px;
+  left: 0.1px;
+  height: 27px;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+}
+.maroon {
+  color: #570000;
+}
+/* Button Hover Style */
+.maroon:hover:before, 
+.maroon:hover:after {
+    background: #570000;
+}
+.honeybutton:hover{
+    color:#fff;
+}
+/*slide animation*/
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(10);
+  }
+}
+/*HoneyComb Buttons End*/
+#myCarousel {
+    height:100%;
+    width:100%;
+}
+
+.carousel-indicators {
+    top:4%;
+    bottom:auto;
+}
