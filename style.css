@@ -1,45 +1,68 @@
+html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
 body {
     background: url('Images/hc.png');
-    /*background-repeat: repeat;*/
     background-size: auto;
     background-attachment: fixed;
+    color: inherit;
+    font-family: sans-serif;
+    text-decoration: none;
 }
+
 /*000000 (black) #ECE4B7 (off white) 570000 (maroon) D4AF37 (gold) 3B3B3B (grey)*/
-.brand-logo {
-    font-family: 'Playfair Display SC', serif;
-    text-align: center;
-    padding: 20px;
-    text-decoration: underline;
-    font-size: 50px !important;
-    vertical-align: sub;
+
+.navbar-grid {
+    display: grid;
+    grid-template-columns: 138px auto;
 }
+
+#row1 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#row2 {
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+#logo {
+    grid-row: span 3;
+}
+
+#nav-title {
+    font-family: 'Playfair Display SC', serif;
+    text-align: left;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 40px;
+    vertical-align: sub;
+    color: white;
+    color: #fff;
+}
+
 nav ul a {
-    /*-webkit-transition: background-color .3s;*/
-    /*transition: background-color .3s;*/
     font-size: 1vw;
     color: #fff;
     display: block;
     letter-spacing: 1px;
-    /*padding: 0 15px;*/
-    /*cursor: pointer;*/
 }
-.nav-extended {
+
+.navbar-grid {
     background-color: #570000 !important;
 }
-.btn-floating {
-    background-color: #D4AF37;
-}
-#right-links {
-    font-family: 'Playfair Display SC', serif;
-    text-align: center;
-    font-size: 50px !important;
-}
+
 .sidebar {
     padding: 0px;
     display: table-row;
     grid-row: span 4;
     height: 100%;
 }
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 3fr 3fr;
@@ -47,163 +70,359 @@ nav ul a {
     grid-gap: 10px;
     padding: 0%;
 }
-.hornet-time {
-    background-color: green;
-}
+
 .social-media {
-    background-color: aquamarine;
+    align: center;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
 }
+
 .container {
     width: 100%;
 }
-.container-pictures {
-    /*border: 2px solid black;*/
-    /*padding: 0px;*/
-}
+
 .item {
     margin-left: auto;
     margin-right: auto;
 }
+
 #Image1 {
     height: 300px;
     width: 100%;
 }
+
 #Image2 {
     height: 300px;
     width: 100%;
 }
+
 #Image3 {
     height: 300px;
     width: 100%;
 }
+
 #Image4 {
     height: 300px;
     width: 100%;
 }
+
 .carousel-caption {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10%;
     padding: 5px;
 }
+
 .progress {
     align-items: center;
     justify-content: center;
     background-color: #eee;
     z-index: 100;
 }
+
 h1 {
     font-size: 12.5px
 }
 
+.btn-floating {
+    color: white;
+    background-color: #D4AF37;
+}
+
+.btn-floating:hover {
+    background-color: #ECE4B7;
+    color: black;
+}
+
+/*quotes*/
+
+#quote {
+    font-size: 2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: #ECE4B7;
+    text-align: center;
+}
+
 
 /*HoneyComb Buttons*/
+
 /*line*/
+
 .vl {
-  margin-left: 80px;
-  margin-top: 0px;
-  border-left: 6px solid black;
-  height: 100%;
-  z-index: -10;
-  position: absolute;
-  animation: 1s ease-out 0s 1 slideInFromTop;
+    margin-left: 80px;
+    margin-top: 0px;
+    border-left: 6px solid black;
+    height: 100%;
+    z-index: -10;
+    position: absolute;
+    animation: 0.6s ease-out 0s 1 slideInFromTop;
 }
+
 /* Button Border Style */
+
 .maroon:before,
 .maroon:after {
-  border: 3px solid #570000;
-  background-color: #D4AF37;
+    border: 3px solid #570000;
+    background-color: #D4AF37;
 }
+
 .honeybutton:before {
-  position: absolute;
-  content: '';
-  border-bottom: none;
-  -webkit-transform: perspective(15px) rotateX(5deg);
-  -moz-transform: perspective(15px) rotateX(5deg);
-  transform: perspective(9px) rotateX(4deg);
+    position: absolute;
+    content: '';
+    border-bottom: none;
+    -webkit-transform: perspective(15px) rotateX(5deg);
+    -moz-transform: perspective(15px) rotateX(5deg);
+    transform: perspective(9px) rotateX(4deg);
 }
+
 .honeybutton:after {
-  position: absolute;
-  top: 26px;
-  content: '';
-  border-top: none;
-  -webkit-transform: perspective(15px) rotateX(-5deg);
-  -moz-transform: perspective(15px) rotateX(-5deg);
-  transform: perspective(9px) rotateX(-4deg);
+    position: absolute;
+    top: 28px;
+    content: '';
+    border-top: none;
+    -webkit-transform: perspective(15px) rotateX(-5deg);
+    -moz-transform: perspective(15px) rotateX(-5deg);
+    transform: perspective(9px) rotateX(-4deg);
 }
+
+.hornet-time {
+    align-items: center;
+    background-color: rgba(128, 0, 0, 0.8);
+    font-family: sans-serif;
+}
+
+#HT {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#HTInfo {
+    text-align: center;
+    font-size: 22px;
+}
+
 .maroon,
-.honeybutton{
-  position: absolute;
-}
 .honeybutton {
-  transition: all 0.5s;
-  position: relative;
-  display: block;
-  background: transparent;
-  width: 100px;
-  height: 45px;
-  line-height: 60px;
-  font-family: sans-serif;
-  text-align: center;
-  font-size: 17px;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin: 40px;
-  margin-top: 10px;
-  animation: 1s ease-out 0s 1 slideInFromTop;
+    position: absolute;
+}
+
+.honeybutton {
+    transition: all 0.5s;
+    position: relative;
+    display: block;
+    background: transparent;
+    width: 100px;
+    height: 45px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 40px;
+    margin-top: 10px;
+    animation: 0.1s ease-out 0s 1 slideInFromTop;
 }
 
 .honeybutton:before,
 .honeybutton:after {
-  position: absolute;
-  z-index: -1;
-  width: 100px;
-  left: 0.1px;
-  height: 27px;
-  animation: 1s ease-out 0s 1 slideInFromTop;
+    position: absolute;
+    z-index: -1;
+    width: 100px;
+    left: 0.1px;
+    height: 27px;
+    animation: 0.1s ease-out 0s 1 slideInFromTop;
 }
+
 .maroon {
-  color: #570000;
+    color: #570000;
+    animation: 0.8s ease-out 0s 1 slideInFromTop;
 }
+
 /* Button Hover Style */
-.maroon:hover:before, 
+
+.maroon:hover:before,
 .maroon:hover:after {
     background: #570000;
 }
-.honeybutton:hover{
-    color:#fff;
-}
-/*slide animation*/
-@keyframes slideInFromTop {
-  0% {
-    transform: translateY(-300%);
-  }
-  100% {
-    transform: translateY(10);
-  }
+
+.honeybutton:hover {
+    color: #fff;
 }
 
-/*@keyframes slideInFromLeft {*/
-/*  0% {*/
-/*    transform: translateX(-200%);*/
-/*  }*/
-/*  100% {*/
-/*    transform: translateX(20);*/
-/*  }*/
-/*}*/
+/*slide animation*/
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-300%);
+    }
+    100% {
+        transform: translateY(10);
+    }
+}
 
 /*HoneyComb Buttons End*/
 
-
 #myCarousel {
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
 }
 
 .carousel-indicators {
-    top:4%;
-    bottom:auto;
+    top: 4%;
+    bottom: auto;
 }
 
 #social-med-links {
-    display:inline-block;
+    display: inline-block;
+}
+
+
+
+/*calendar*/
+
+#calbutton {
+    border-radius: 100px;
+    background-color: #D4AF37;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px;
+    width: 70px;
+    height: 70px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 8px;
+    box-shadow: 6px 6px 11px #000000;
+}
+
+#calbutton:hover {
+    background-color: #ECE4B7;
+}
+
+
+
+
+
+
+
+
+#row1>ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style-type: none;
+}
+
+#row1>ul>li {
+    float: left;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 15px;
+    vertical-align: middle;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-item:hover {
+    background-color: #972e2e;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-content {
+    position: absolute;
+    overflow: hidden;
+    background-color: #222;
+    max-height: 0;
+}
+
+.nav-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-content a:hover {
+    text-decoration: none;
+    background-color: #ca841c;
+}
+
+.nav-sub {
+    padding: 15px;
+    background-color: #996515;
+    border: 1px solid #aaa;
+}
+
+.nav-sub ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.nav-sub ul li a {
+    display: inline-block;
+    padding: 5px 0;
+    text-decoration: none;
+    color: #e6e6e6;
+}
+
+.nav-item:focus {
+    background-color: #972e2e;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-item:hover~.nav-content {
+    max-height: 400px;
+    transition: max-height 700ms ease-in;
+}
+
+.nav-content:hover {
+    max-height: 400px;
+    transition: max-height 700ms ease-in;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-twitter {
+    background: #570000;
+    color: #D4AF37;
+    width: 60px;
+    height: 60px;
+}
+
+.fa-facebook {
+    background: #570000;
+    color: #D4AF37;
+    width: 60px;
+    height: 60px;
+}
+
+.fa-instagram {
+    background: #570000;
+    color: #D4AF37;
+    width: 60px;
+    height: 60px;
+}
+
+.fa-snapchat {
+    background: #570000;
+    color: #D4AF37;
+    width: 60px;
+    height: 60px;
 }

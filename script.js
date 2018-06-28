@@ -1,24 +1,131 @@
+var quoteArray = ['“The person who asks questions is a fool for five minutes. The person who does not ask questions remains a fool forever.” - Chinese Proverb',
+    '“True knowledge is when a person knows the limitations of their knowledge.” - Chinese Proverb',
+    '“Learning is a treasure that will follow its owner everywhere.” - Chinese Proverb',
+    '“All things are difficult before they are easy.” - Chinese Proverb',
+    '“Your teacher can open the door, but you must enter by yourself.” - Chinese Proverb',
+    '“A closed mind is like a closed book, just a block of wood.” - Chinese Proverb',
+    '“A wise person makes their own decisions. An ignorant person follows the public opinion.” - Chinese Proverb',
+    '“If you always give, you will always have.” - Chinese Proverb',
+    '“Failure is the mother of success.” - Chinese Proverb',
+    '“Making a thousand decisions, even the wise will make a mistake.” - Chinese Proverb',
+    '“It is not important to be better than someone else, but to be better than yesterday.” - Chinese Proverb',
+    '“Do not fear going forward slowly. Fear only to stand still.” - Chinese Proverb',
+    '“I hated every minute of training, but I said, ‘Do not quit. Suffer now and live the rest of your life as a champion.’” - Muhammed Ali',
+    '“The best part about inspiring others is that you may even inspire yourself.” - An anonymous mouse',
+    '“The most valuable thing you can make is a mistake. You can not learn anything from being perfect.” – Adam Osborne',
+    '“Everybody is a genius, but if you judge a fish by its ability to climb a tree, it will spend its life believing that it is stupid.” - Albert Einstein',
+    '“Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.” - Helen Keller',
+    '“With the new day comes new strength and new thoughts.” - Eleanor Roosevelt',
+    '“The past cannot be changed. The future is yet in your power.” - Unknown',
+    '“Failure will never overtake me if my determination to succeed is strong enough.” - Og Mandino',
+    '“It does not matter how slowly you go as long as you do not stop.” - Confucius',
+    '“Always do your best. What you plant now, you will harvest later.” - Og Mandino',
+    '“It always seems impossible until it is done.” - Nelson Mandela',
+    '“You can not cross the sea merely by standing and staring at the water.” - Rabindranath Tagore',
+    '“We should not give up and we should not allow the problem to defeat us.” - A. P. J. Abdul Kalam',
+    '“If you can dream it, you can do it.” - Walt Disney',
+    '“Without hard work, nothing grows but weeds.” - Gordon B. Hinckley',
+    '“The best preperation for tomorrow is doing your best today.” - H. Jackson Brown, Jr.',
+    '“If you are always trying to be normal, you will never know how amazing you can be.” - Maya Angelou',
+    '“Everyday may not be a good day, but there is good in every day.” - Anonymous',
+    '“If we have the attitude that today is going to be a great day, then it usually is.” - Catherine Pulsifer',
+    '“The truly rich are those who enjoy what they have.” - Yiddish Proverb',
+    '“Empty pockets never held anyone back. Only empty heads and empty hearts can do that.” - Norman Vincent Peale',
+    '“A problem is a chance for you to do your best.” - Duke Ellington',
+    '“I aspire to inspire before I expire.” - Pravinee Hurbungs',
+    '“Feeling gratitude and not expressing it is like wrapping a present and not giving it.” - William Arthur Ward',
+    '“Dreams and goals should be just out of your present reach but not out of sight. Dreams and goals are coming attractions in your life.” - Joseph Campbell',
+    '“There are two mistakes one can make along the road to truth - not going all the way, and not starting.” - Buddha',
+    '“Our time here on Earth is a learning experience, and no one is exempt!” - Angela Agranoff',
+    '“Life is more meaningful when you are always looking to grow and work toward a goal.” - Les Brown',
+    '“The most important thing about getting somewhere is starting right where we are.” - Bruce Barton',
+    '“Only a mediocre person is always at their best.” - W. Somerset Maugham',
+    '“When you come to the end of your rope, tie a knot and hang on.” - Franklin Roosevelt',
+    '“The only way to do great work is to love what you do. If you have not found it yet, keep looking.” - Steve Jobs',
+    '“It is an incredible feeling to know that you have helped change the world for the better, even in a small way. Do something that is greater than you.” - James Fullerton',
+    '“‘I will be happy when...’ is a false promise. The time to be happy is now.” - Tony Clark',
+    '“You can do what you have to do, and sometimes you can do it even better than you think you can.” - Jimmy Carter',
+    '“There is a positive side to any situation, even if you do not see it right away.” - Nealey Stapleton',
+    '“May there be a miracle in YOUR life today and may you have the EYES to see it.” - Veronica Hay',
+    '“Character cannot be developed in ease and quiet. Only through experience of trial and suffering can the soul be strengthened, ambition inspired, and success achieved.” - Helen Keller',
+    '“Your worth consists in what you are and not in what you have.” - Thomas Edison',
+    '“You may plan to write a book some day, but you are living a book every day.” - Wilferd Peterson',
+    '“Make your life a masterpiece; imagine no limitations on what you can be, have, or do.” - Brian Tracy',
+    '“The way to get started is to quit talking and begin doing.” – Walt Disney',
+    '“The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.” – Winston Churchill',
+    '“Do not let yesterday take up too much of today.” – Will Rogers',
+    '“You learn more from failure than from success. Do not let it stop you. Failure builds character.” – Unknown',
+    '“It is not whether you get knocked down, it is whether you get up.” – Vince Lombardi',
+    '“If you are working on something that you really care about, you do not have to be pushed. The vision pulls you.” – Steve Jobs',
+    '“People who are crazy enough to think they can change the world, are the ones who do.” – Rob Siltanen',
+    '“We may encounter many defeats but we must not be defeated.” – Maya Angelou',
+    '“Knowing is not enough; we must apply. Wishing is not enough; we must do.” – Johann Wolfgang Von Goethe',
+    '“We generate fears while we sit. We overcome them by action.” – Dr. Henry Link',
+    '“Whether you think you can or think you can not, you are right.” – Henry Ford',
+    '“Life is either a great adventure or nothing.” – Helen Keller',
+    '“The person who has confidence in themself gains the confidence of others.” – Hasidic Proverb',
+    '“The only limit to our realization of tomorrow will be our doubts of today.” – Franklin D. Roosevelt',
+    '“What you lack in talent can be made up with desire, hustle and giving 110% all the time.” – Don Zimmer',
+    '“Do what you can with all you have, wherever you are.” – Theodore Roosevelt',
+    '“Develop an ‘attitude of gratitude’. Say thank you to everyone you meet for everything they do for you.” – Brian Tracy',
+    '“You are never too old to set another goal or to dream a new dream.” – C.S. Lewis',
+    '“To see what is right and not do it is a lack of courage.” – Confucious',
+    '“Reading is to the mind, as exercise is to the body.” – Brian Tracy',
+    '“Fake it until you make it! Act as if you had all the confidence you require until it becomes your reality.” – Brian Tracy',
+    '“The future belongs to the competent. Get good, get better, be the best you can be!” – Brian Tracy',
+    '“For every reason it is not possible, there are hundreds of people who have faced the same circumstances and succeeded.” – Jack Canfield',
+    '“Things work out best for those who make the best of how things work out.” – John Wooden',
+    '“I think goals should never be easy, they should force you to work, even if they are uncomfortable at the time.” – Michael Phelps',
+    '“One of the lessons that I grew up with was to always stay true to yourself and never let what somebody else says distract you from your goals.” – Michelle Obama',
+    '“Today’s accomplishments were yesterday’s impossibilities.” – Robert H. Schuller',
+    '“The only way to do great work is to love what you do. If you have not found it yet, keep looking. Do not settle.” – Steve Jobs',
+    '“You do not have to be great to start, but you have to start to be great.” – Zig Ziglar',
+    '“There are two great days in a person’s life - the day we are born and the day we discover why.” - William Barclay',
+    '“Every great dream begins with a dreamer. Always remember, you have within you the strength, the patience, and the passion to reach for the stars to change the world.” - Harriet Tubman',
+    '“Great minds discuss ideas; average minds discuss events; small minds discuss people.” - Eleanor Roosevelt',
+    '“Simply enjoy life and the great pleasures that come with it.” - Karolina Kurkova',
+    '“Do the difficult things while they are easy and do the great things while they are small. A journey of a thousand miles must begin with a single step.” - Lao Tzu',
+    '“First, accept sadness. Realize that without losing, winning is not so great.” - Alyssa Milano',
+    '“Our knowledge is a little island in a great ocean of nonknowledge.” - Isaac Bashevis Singer',
+    '“Some are born great, some achieve greatness, and some have greatness thrust upon them.” - William Shakespeare',
+    '“Good health and good sense are two of life’s greatest blessings.” - Publilius Syrus',
+    '“Luck is great, but most of life is hard work.” - Iain Duncan Smith',
+    '“Great works are performed not by strength but by perseverance.” - Samuel Johnson',
+    '“A little thought and a little kindness are often worth more than a great deal of money.” - John Ruskin',
+    '“To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.” - Ralph Waldo Emerson',
+    '“After climbing a great hill, one only finds that there are many more hills to climb.” Nelson Mandela',
+    '“Great things are done by a series of small things brought together.” - Vincent Van Gogh',
+    '“Great achievement is usually born of great sacrifice, and is never the result of selfishness.” - Napoleon Hill',
+    '“Beware of little expenses. A small leak will sink a great ship.” - Benjamin Franklin',
+    '“The world is the great gymnasium where we come to make ourselves strong.” - Swami Vivekananda',
+    '“No dream is too big. No challenge is too great. Nothing we want for our future is beyond our reach.” - Donald Trump',
+];
+var quoteNumber = Math.floor(Math.random() * quoteArray.length);
 let quote = document.querySelector("#quote");
-let button = document.querySelector("#changebutton");
-var quoteNumber = Math.floor(Math.random() * 52) + 1;
+quote.innerHTML = quoteArray[quoteNumber];
 
-quote.style.fontSize = "15px";
-quote.style.paddingLeft = "15px";
-quote.style.color = "#D4AF37";
-quote.style.weight = "bold"
+$(function() {
+    $("#dialog").dialog({
+        autoOpen: false,
+        width: "80%",
+        maxWidth: "768px",
+        show: {
+            effect: "slide",
+            direction: "right",
+            duration: 1500
+        },
+        hide: {
+            effect: "slide",
+            direction: "right",
+            duration: 1000
+        }
+    });
 
-button.addEventListener('click', changeQuote);
+    $("#calbutton").on("click", function() {
+        $("#dialog").dialog("open");
+    });
+});
 
-function changeQuote() {
-    quoteNumber = Math.floor(Math.random() * 52) + 1;
-    console.log(quoteNumber + 1);
-    quote.innerHTML = quoteArray[quoteNumber];
+function clearContents(element) {
+  element.value = '';
 }
-
-var quoteArray = ['“The person who asks questions is a fool for five minutes. The person who does not ask questions remains a fool forever.” - Chinese Proverb', '“True knowledge is when a person knows the limitations of their knowledge.” - Chinese Proverb', '“Learning is a treasure that will follow its owner everywhere.” - Chinese Proverb', '“All things are difficult before they are easy.” - Chinese Proverb', '“Your teacher can open the door, but you must enter by yourself.” - Chinese Proverb', '“A closed mind is like a closed book, just a block of wood.” - Chinese Proverb', '“A wise person makes their own decisions. An ignorant person follows the public opinion.” - Chinese Proverb', '“If you always give, you will always have.” - Chinese Proverb', '“Failure is the mother of success.” - Chinese Proverb', '“Making a thousand decisions, even the wise will make a mistake.” - Chinese Proverb', '“It is not important to be better than someone else, but to be better than yesterday.” - Chinese Proverb', '“Do not fear going forward slowly. Fear only to stand still.” - Chinese Proverb', '“I hated every minute of training, but I said, "Don’t quit. Suffer now and live the rest of your life as a champion." ” - Muhammed Ali', '“The best part about inspiring others is that you may even inspire yourself.” - An anonymous mouse', '“The most valuable thing you can make is a mistake. You can not learn anything from being perfect.” – Adam Osborne', '“Everybody is a genius, but if you judge a fish by its ability to climb a tree, it will spend its life believing that it is stupid.” - Albert Einstein', '“Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.” - Helen Keller', '“With the new day comes new strength and new thoughts.” - Eleanor Roosevelt', '“The past cannot be changed. The future is yet in your power.” - Unknown', '“Failure will never overtake me if my determination to succeed is strong enough.” - Og Mandino', '“It does not matter how slowly you go as long as you do not stop.” - Confucius', '“Always do your best. What you plant now, you will harvest later.” - Og Mandino', '“It always seems impossible until it is done.” - Nelson Mandela', '“You can not cross the sea merely by standing and staring at the water.” - Rabindranath Tagore', '“We should not give up and we should not allow the problem to defeat us.” - A. P. J. Abdul Kalam', '“If you can dream it, you can do it.” - Walt Disney', '“Without hard work, nothing grows but weeds.” - Gordon B. Hinckley', '“The best preperation for tomorrow is doing your best today.” - H. Jackson Brown, Jr.', '“If you are always trying to be normal, you will never know how amazing you can be.” - Maya Angelou', '“Everyday may not be a good day, but there is good in every day.” - Anonymous', '“If we have the attitude that today is going to be a great day, then it usually is.” - Catherine Pulsifer', '“The truly rich are those who enjoy what they have.” - Yiddish Proverb', '“Empty pockets never held anyone back. Only empty heads and empty hearts can do that.” - Norman Vincent Peale', '“A problem is a chance for you to do your best.” - Duke Ellington', '“I aspire to inspire before I expire.” - Pravinee Hurbungs', '“Feeling gratitude and not expressing it is like wrapping a present and not giving it.” - William Arthur Ward', '“Dreams and goals should be just out of your present reach but not out of sight. Dreams and goals are coming attractions in your life.” - Joseph Campbell', '“There are two mistakes one can make along the road to truth - not going all the way, and not starting.” - Buddha', '“Our time here on Earth is a learning experience, and no one is exempt!” - Angela Agranoff', '“Life is more meaningful when you are always looking to grow and work toward a goal.” - Les Brown', '“The most important thing about getting somewhere is starting right where we are.” - Bruce Barton', '“Only a mediocre person is always at their best.” - W. Somerset Maugham', '“When you come to the end of your rope, tie a knot and hang on.” - Franklin Roosevelt', '“The only way to do great work is to love what you do. If you have not found it yet, keep looking.” - Steve Jobs', '“It is an incredible feeling to know that you have helped change the world for the better, even in a small way. Do something that is greater than you.” - James Fullerton', '“ "I will be happy when..." is a false promise. The time to be happy is now.” - Tony Clark', '“You can do what you have to do, and sometimes you can do it even better than you think you can.” - Jimmy Carter', '“There is a positive side to any situation, even if you do not see it right away.” - Nealey Stapleton', '“May there be a miracle in YOUR life today and may you have the EYES to see it.” - Veronica Hay', '“Character cannot be developed in ease and quiet. Only through experience of trial and suffering can the soul be strengthened, ambition inspired, and success achieved.” - Helen Keller', '“Your worth consists in what you are and not in what you have.” - Thomas Edison', '“You may plan to write a book some day, but you are living a book every day.” - Wilferd Peterson', '“Make your life a masterpiece; imagine no limitations on what you can be, have, or do.” - Brian Tracy', '“The way to get started is to quit talking and begin doing.” – Walt Disney', '“”', '“”', '“”', '“”', '“”', '“”', '“”', '“”', '“”', '“”', '“”', '“”', '“”', '“”', '“”', '“”', '“”', ];
-changeQuote();
-
-document.addEventListener("DOMContentLoaded", function() {
-    $('.progress').fadeOut('slow')
-    $('.intermediate').fadeOut()
-})
