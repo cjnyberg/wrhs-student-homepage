@@ -6,7 +6,7 @@ html {
 
 body {
     background: url('Images/hc.png');
-    background-size: auto;
+    background-size: 100% 100%;
     background-attachment: fixed;
     color: inherit;
     font-family: sans-serif;
@@ -49,6 +49,12 @@ nav ul a {
     font-size: 1vw;
     color: #fff;
     display: block;
+    letter-spacing: 1px;
+}
+
+h5 {
+    font-size: 8vw;
+    color: #570000;
     letter-spacing: 1px;
 }
 
@@ -136,7 +142,7 @@ h1 {
 /*quotes*/
 
 #quote {
-    font-size: 2vw;
+    font-size: 1.8vw;
     padding-left: 1vw;
     padding-right: 1vw;
     color: #ECE4B7;
@@ -187,8 +193,11 @@ h1 {
 
 .hornet-time {
     align-items: center;
-    background-color: rgba(128, 0, 0, 0.8);
+    background-color: #D4AF37;
     font-family: sans-serif;
+    border-color: #570000;
+    border-style: solid;
+    border-weight: 3px;
 }
 
 #HT {
@@ -199,6 +208,7 @@ h1 {
 #HTInfo {
     text-align: center;
     font-size: 22px;
+
 }
 
 .maroon,
@@ -425,4 +435,17 @@ h1 {
     color: #D4AF37;
     width: 60px;
     height: 60px;
+}
+
+h0 {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: center;
+    color: #D4AF37;
+    font-size: 4.5vw;
+}
+
+
+h3 {
+    font-size: 1.25vw;
 }

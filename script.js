@@ -11,7 +11,7 @@ var quoteArray = ['“The person who asks questions is a fool for five minutes. 
     '“It is not important to be better than someone else, but to be better than yesterday.” - Chinese Proverb',
     '“Do not fear going forward slowly. Fear only to stand still.” - Chinese Proverb',
     '“I hated every minute of training, but I said, ‘Do not quit. Suffer now and live the rest of your life as a champion.’” - Muhammed Ali',
-    '“The best part about inspiring others is that you may even inspire yourself.” - An anonymous mouse',
+    '“The best part about inspiring others is that you may even inspire yourself.” - Kyle Hunt',
     '“The most valuable thing you can make is a mistake. You can not learn anything from being perfect.” – Adam Osborne',
     '“Everybody is a genius, but if you judge a fish by its ability to climb a tree, it will spend its life believing that it is stupid.” - Albert Einstein',
     '“Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.” - Helen Keller',
@@ -103,7 +103,6 @@ var quoteArray = ['“The person who asks questions is a fool for five minutes. 
 var quoteNumber = Math.floor(Math.random() * quoteArray.length);
 let quote = document.querySelector("#quote");
 quote.innerHTML = quoteArray[quoteNumber];
-
 $(function() {
     $("#dialog").dialog({
         autoOpen: false,
@@ -127,5 +126,5 @@ $(function() {
 });
 
 function clearContents(element) {
-  element.value = '';
+    element.value = '';
 }
